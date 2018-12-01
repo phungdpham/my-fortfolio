@@ -1,28 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+//importing pages and page component
+import MainPage from './components/Pages/Home';
+
+//importing fontAwesome library
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { fab } from '@fortawesome/free-brands-svg-icons';
+// import { faBars, faDirections, faPhone, faClock } from '@fortawesome/free-solid-svg-icons';
+// library.add(fab, faBars, faDirections, faPhone, faClock)
+
+const App = () => (
+  <Router>
+    <div>
+      {/* <Navbar /> */}
+      <Switch>
+        <Route exact path='/' component={MainPage} />
+      </Switch>
+
+    </div>
+  </Router>
+);
 
 export default App;
+
