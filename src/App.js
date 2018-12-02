@@ -1,27 +1,19 @@
 import React from "react";
-
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-//importing pages and page component
-import MainPage from './components/Pages/Home';
-
-//importing fontAwesome library
-// import { library } from '@fortawesome/fontawesome-svg-core';
-// import { fab } from '@fortawesome/free-brands-svg-icons';
-// import { faBars, faDirections, faPhone, faClock } from '@fortawesome/free-solid-svg-icons';
-// library.add(fab, faBars, faDirections, faPhone, faClock)
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/NavTabs';
+import About from './components/Pages/About/About';
+import Portfolio from './components/Pages/Portfolio/Portfolio';
+import Contact from './components/Pages/Contact/Contact';
 
 const App = () => (
   <Router>
     <div>
-      {/* <Navbar /> */}
-      <Switch>
-        <Route exact path='/' component={MainPage} />
-      </Switch>
-
+      <Navbar />
+      <Route exact path="/" component={About} />
+      <Route exact path="/about" component={Portfolio} />
+      <Route path="/contact" component={Contact} />
     </div>
   </Router>
 );
-
 export default App;
 
