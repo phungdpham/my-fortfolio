@@ -1,10 +1,23 @@
+
+
+.card {
+    width: 300px;
+}
+
 .project-img {
-    width: 100%;
+    width: 250p;
     height: 150px;
 }
 
-.card:hover {
+/* .card:hover {
     background-color: #EAECEE;
+} */
+
+#portfolio-content {
+    margin-bottom: 25%;
 }
 
+#portfolio-title {
+    border-bottom: 1px solid grey;
+}
 

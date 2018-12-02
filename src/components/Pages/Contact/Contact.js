@@ -3,7 +3,10 @@ import './contact.css';
 
 const Contact = () => {
     return(
-        <div className="p-3 bg-white text-dark">
+        <div className="container mt-5 p-3 bg-white text-dark">
+            <div className='row d-flex justify-content-center'>
+                <h2 className='mx-4 text-info'>Contact</h2>
+            </div>
             <div className="row">
                 <div className="col-md-12">
                     <form className="mx-4">
@@ -21,7 +24,7 @@ const Contact = () => {
                             <label for="message">Message</label>
                             <textarea className="form-control" rows="5" id="message"></textarea>
                         </div>
-                        <button type="submit" className="btn btn-success">Submit</button>
+                        <button type="submit" className="btn btn-info float-right">Submit</button>
                     </form>
                 </div>
             </div>

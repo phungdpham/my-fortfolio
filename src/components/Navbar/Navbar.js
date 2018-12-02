@@ -4,12 +4,21 @@ import NavTabs from './NavTabs';
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className="container" id="header">
-                <div className="p-3 mb-0 bg-info text-info" id="logo">
-                    <a className="navbar-brand text-info mx-0 pb-0 font-weight-bold" href="/">PHUNG PHAM</a>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light transparent">
+            <div className="container">
+                <a className='navbar-brand' href='/'>
+                    <h3 className='brand-name text-info'>PHUNG PHAM</h3>
+                </a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-btn" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div className='collapse navbar-collapse' id='menu-btn'>
+                    <div className='navbar-nav'>
+                        <NavTabs />
+                    </div>
                 </div>
-                <NavTabs />
+
             </div>
         </nav>
     )
