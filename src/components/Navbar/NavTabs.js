@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './navbar.css';
 
 const NavTabs = () => (
-    <ul className="nav nav-tabs justify-content-end" id="nav-link">
+    <ul className="nav nav-tabs" id="nav-link">
         <li className="nav-item">
             <Link
                 to='/'

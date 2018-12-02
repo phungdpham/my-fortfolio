@@ -4,7 +4,7 @@ import NavTabs from './NavTabs';
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light transparent">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container">
                 <a className='navbar-brand' href='/'>
                     <h3 className='brand-name text-info'>PHUNG PHAM</h3>
@@ -13,7 +13,7 @@ const Navbar = () => {
                     <span className="navbar-toggler-icon">
                     </span>
                 </button>
-                <div className='collapse navbar-collapse' id='menu-btn'>
+                <div className='collapse navbar-collapse d-flex justify-content-end' id='menu-btn'>
                     <div className='navbar-nav'>
                         <NavTabs />
                     </div>

@@ -8,3 +8,19 @@
     background-color: white;
     opacity: 0.9;
 }
+
+.nav-link:hover {
+    border: none;
+    font-weight: bold;
+}
+
+.nav-link:active {
+    border: none;
+    font-weight: bold;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

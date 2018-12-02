@@ -15,9 +15,9 @@ import TriviaGame from '../../../assets/images/trivia-game.jpg';
 
 const Portfolio = () => {
     return (
-        <div className="container bg-light" id='portfolio-content'>
+        <div className="container bg-light mt-3" id='portfolio-content'>
             {/* Heading */}
-            <div className="row mx-2 p-2  d-flex justify-content-center" id='portfolio-title'>
+            <div className="row mx-2 p-2" id='portfolio-title'>
                 <h2 className='text-info'>Portfolio</h2>
             </div>
 
