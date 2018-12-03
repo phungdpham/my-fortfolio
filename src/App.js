@@ -6,6 +6,12 @@ import Portfolio from './components/Pages/Portfolio/Portfolio';
 import Contact from './components/Pages/Contact/Contact';
 import Footer from './components/Pages/Footer/Footer';
 
+//importing fontAwesome library
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faBars, faDirections, faPhone, faClock } from '@fortawesome/free-solid-svg-icons';
+library.add(fab, faBars, faDirections, faPhone, faClock)
+
 const App = () => (
   <Router>
     <div>

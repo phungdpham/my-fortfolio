@@ -13,10 +13,13 @@ const Navbar = () => {
                     <span className="navbar-toggler-icon">
                     </span>
                 </button>
-                <div className='collapse navbar-collapse d-flex justify-content-end' id='menu-btn'>
+                <div className='collapse navbar-collapse d-flex justify-content-start' id='menu-btn'>
                     <div className='navbar-nav'>
                         <NavTabs />
                     </div>
+                </div>
+                <div className='social-links'>
+                
                 </div>
 
             </div>
