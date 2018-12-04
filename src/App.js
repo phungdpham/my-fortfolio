@@ -9,15 +9,16 @@ import Footer from './components/Pages/Footer/Footer';
 //importing fontAwesome library
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faBars, faDirections, faPhone, faClock } from '@fortawesome/free-solid-svg-icons';
-library.add(fab, faBars, faDirections, faPhone, faClock)
+import { faBars, faDirections, faPhone, faClock, faEnvelope, faSquare, faFolderOpen } from '@fortawesome/free-solid-svg-icons';
+library.add(fab, faBars, faDirections, faPhone, faClock, faEnvelope, faSquare, faFolderOpen)
 
 const App = () => (
   <Router>
     <div>
+      {/* <LandingPage /> */}
       <Navbar />
-      <Route exact path="/" component={About} />
-      <Route exact path="/portfolio" component={Portfolio} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/" component={Portfolio} />
       <Route path="/contact" component={Contact} />
       <Footer />
     </div>

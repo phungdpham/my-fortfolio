@@ -2,6 +2,7 @@ import React from 'react';
 import './portfolio.css';
 
 import Practices from './Practices';
+import AboutMe from '../About/About';
 
 const Portfolio = () => {
     return (
@@ -17,6 +18,7 @@ const Portfolio = () => {
                 <h5>Practices</h5>
                 <Practices />
             </div>
+            
             
         </div>
     )
