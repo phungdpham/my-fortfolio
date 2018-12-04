@@ -8,7 +8,7 @@ const SocialLink = () => {
 	return(
 		<ul className="nav nav-tabs" id='social-icon'>
 			
-			<li  className="nav-item ml-3">
+			<li  className="nav-item">
 				<a href='https://github.com/phungdpham' target='_blank' title='Github'>
 					<span className='icon'>
 						<FontAwesomeIcon icon={['fab', 'github']} size='3x' color='#212F3C' />
@@ -18,7 +18,7 @@ const SocialLink = () => {
 					</span>
 				</a>
 			</li>
-			<li  className="nav-item ml-3">
+			<li  className="nav-item">
 				<a href='https://www.linkedin.com/in/phungdpham/' target='_blank'  title='Linkedin Profile'>
 					<span className='icon'>
 						<FontAwesomeIcon icon={['fab', 'linkedin']} size='3x'  color='#21618C' />
@@ -28,7 +28,7 @@ const SocialLink = () => {
 					</span>
 				</a>
 			</li>
-			<li  className="nav-item ml-3">
+			<li  className="nav-item">
 				<a href='/' title='Portfolio'>
 					<span className='icon'>
 						<FontAwesomeIcon icon='folder-open' size='3x' color='#D4AC0D  ' />	
@@ -38,7 +38,7 @@ const SocialLink = () => {
 					</span>
 				</a>
 			</li>
-			<li  className="nav-item ml-3">
+			<li  className="nav-item">
 				<a title='contact' href='/contact'>
 					<span className='icon'>
 						<FontAwesomeIcon icon='envelope' size='3x' color='#D4AC0D  ' />
@@ -48,7 +48,7 @@ const SocialLink = () => {
 					</span>
 				</a>
 			</li>
-			<li  className="nav-item ml-3">
+			<li  className="nav-item">
 				<a href='/about'  title='About Me'>
 					<span className='icon'>
 						<img id='profile-img' src={PhungImage}></img>

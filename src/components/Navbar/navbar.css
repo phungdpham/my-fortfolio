@@ -1,5 +1,6 @@
 .navbar {
-    background-color: #F9E79F
+    background-color: #F9E79F;
+    opacity: 0.9;
 }
 .brand-name {
     color: #21618C;
@@ -45,6 +46,11 @@
     display: none;
 }
 
+.nav li .icon {
+    height: 100%;
+    padding: 15px;
+}
+
 .nav a:hover .icon{
     display: none;
 }
@@ -58,7 +64,6 @@
     height: 100%;
     padding: 15px;
     text-align: center;
-    text-decoration: none;
     color: #21618C;
     background-color: #F9E79F;
 }
