@@ -1,12 +1,12 @@
 import React from 'react';
 import './portfolio.css';
 
-import Practices from './Practices';
-import AboutMe from '../About/About';
+import Practice from './Practices1';
+
 
 const Portfolio = () => {
     return (
-        <div className="container bg-light mt-3" id='portfolio-content'>
+        <div className="container bg-light mt-3 mb-3" id='portfolio-content'>
             {/* Heading */}
             <div className="row mx-2 p-2" id='portfolio-title'>
                 <h2 className='text-info'>Portfolio</h2>
@@ -16,7 +16,7 @@ const Portfolio = () => {
             </div>
             <div>
                 <h5>Practices</h5>
-                <Practices />
+                <Practice />
             </div>
             
             
