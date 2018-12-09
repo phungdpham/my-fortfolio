@@ -2,16 +2,16 @@ import React from 'react';
 import './practice.css';
 
 // importing project images
-import TrainScheduler from '../../../assets/images/train-scheduler.jpg';
-import AnimalGifStatic from '../../../assets/images/animal-gifstatic.jpg';
-import CrystalCollector from '../../../assets/images/crystal-collector.jpg';
-import FlipACoin from '../../../assets/images/flip-a-coin.png';
-import LotteryDrawing from '../../../assets/images/lottery-drawing.jpg';
-import MovieSearch from '../../../assets/images/movie-search.jpg';
-import PsychicGame from '../../../assets/images/psychic-game.jpg';
-import StarWars from '../../../assets/images/star-wars.jpg';
-import StopWatch from '../../../assets/images/stop-watch.jpg';
-import TriviaGame from '../../../assets/images/trivia-game.jpg';
+import TrainScheduler from '../../../../assets/images/train-scheduler.jpg';
+import AnimalGifStatic from '../../../../assets/images/animal-gifstatic.jpg';
+import CrystalCollector from '../../../../assets/images/crystal-collector.jpg';
+import FlipACoin from '../../../../assets/images/flip-a-coin.png';
+import LotteryDrawing from '../../../../assets/images/lottery-drawing.jpg';
+import MovieSearch from '../../../../assets/images/movie-search.jpg';
+import PsychicGame from '../../../../assets/images/psychic-game.jpg';
+import StarWars from '../../../../assets/images/star-wars.jpg';
+import StopWatch from '../../../../assets/images/stop-watch.jpg';
+import TriviaGame from '../../../../assets/images/trivia-game.jpg';
 
 const Practices = () => {
 	return (
@@ -25,6 +25,18 @@ const Practices = () => {
 							<div className='img-overlay-content'>
 								<div className='app-name'>
 									<h5 className='h5-text'>TrainScheduler</h5>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					{/* Trivia Game */}
+					<div className='practice'>
+						<img className="group-img" src={TriviaGame} alt="trivia game"></img>
+						<a href='https://phungdpham.github.io/trivia-game/' target='_blank'>
+							<div className='img-overlay-content'>
+								<div className='app-name'>
+									<h5 className='h5-text'>Trivia Game</h5>
 								</div>
 							</div>
 						</a>
@@ -49,6 +61,18 @@ const Practices = () => {
 							<div className='img-overlay-content'>
 								<div className='app-name'>
 									<h5 className='h5-text'>Star Wars RGP Game</h5>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					{/* Stop watch */}
+					<div className='practice'>
+						<img className="group-img" src={StopWatch} alt="stop watch"></img>
+						<a href='https://phungdpham.github.io/stop-watch/' target='_blank'>
+							<div className='img-overlay-content'>
+								<div className='app-name'>
+									<h5 className='h5-text'>Stop Watch</h5>
 								</div>
 							</div>
 						</a>
@@ -111,31 +135,6 @@ const Practices = () => {
 							</div>
 						</a>
 					</div>
-
-					{/* Stop watch */}
-					<div className='practice'>
-						<img className="group-img" src={StopWatch} alt="stop watch"></img>
-						<a href='https://phungdpham.github.io/stop-watch/' target='_blank'>
-							<div className='img-overlay-content'>
-								<div className='app-name'>
-									<h5 className='h5-text'>Stop Watch</h5>
-								</div>
-							</div>
-						</a>
-					</div>
-
-					{/* Trivia Game */}
-					<div className='practice'>
-						<img className="group-img" src={TriviaGame} alt="trivia game"></img>
-						<a href='https://phungdpham.github.io/trivia-game/' target='_blank'>
-							<div className='img-overlay-content'>
-								<div className='app-name'>
-									<h5 className='h5-text'>Trivia Game</h5>
-								</div>
-							</div>
-						</a>
-					</div>
-
 				</div>
 			</div>
 		</div>
