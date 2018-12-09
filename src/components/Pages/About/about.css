@@ -6,3 +6,17 @@
     border-bottom: 1px solid grey;
 }
 
+#learn-more {
+    cursor: pointer;
+    color: blue;
+}
+
+#view-portfolio {
+    cursor: pointer;
+    color: blue;
+    text-decoration: none;
+}
+
+#extend-content {
+    display: none;
+}

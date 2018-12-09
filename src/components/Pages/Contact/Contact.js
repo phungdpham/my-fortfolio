@@ -7,7 +7,7 @@ const Contact = () => {
             <div className='row mx-0' id='title-contact'>
                 <h2 className='mx-4 text-info'>Contact</h2>
             </div>
-            <div className="row mt-2 mb-5 ml-5">
+            <div className="row   ml-5">
                 <div className="col-md-12" id='contact-phung'>
                     
                     <div className='contact-info'>
@@ -31,15 +31,15 @@ const Contact = () => {
                         </p>
                         <p className='float-right'>
                             <a href='tel:+14077792731'>
-                                <button type="button" class="btn btn-warning">Cal Me</button>
+                                <button type="button" class="btn btn-warning">Call Me</button>
                             </a>
                         </p>
                     </div>
-                    <p className='contact-ifno'>
-                        Thank you for visting my website, 
-                        please feel free to contact me at the above contact information.
+                    <p className='contact-inno'>
+                        Please feel free to contact me at the above contact information. 
+                        Thank you for visting my website!
                     </p>
-                   
+                  
                 </div>
             </div>
         </div>
