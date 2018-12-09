@@ -1,3 +1,14 @@
 #title-contact {
     border-bottom: 1px solid grey;
 }
+
+#contact-phung {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-info {
+    display: block;
+    margin: 50px;
+}
