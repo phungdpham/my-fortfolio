@@ -30,12 +30,13 @@ class About extends Component {
                                         </p>
                                         <a id='learn-more'>Learn More</a>
                                     </div>
-                                    <div id='extend-content'>
+                                    <div>
                                         <div className='d-block'>
                                             <h6>His Skill sets</h6>
                                             <div className='row'>
                                                 <div className='col-md-6'>
                                                     <ul>
+                                                        <li>React.js</li>
                                                         <li>HTML5</li>
                                                         <li>CS3</li>
                                                         <li>JavaScript</li>
@@ -47,7 +48,6 @@ class About extends Component {
                                                 <div className='col-md-6'>
                                                     <ul>
                                                         <li>Node.js</li>
-                                                        <li>React.js</li>
                                                         <li>MongoDB</li>
                                                         <li>MySQL</li>
                                                         <li>Git</li>
@@ -56,7 +56,7 @@ class About extends Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className='d-block'>
+                                        <div className='d-block' id='extend-content'>
                                             <h6>He loves coding business application and creative websites</h6>
                                             <p>
                                                 Phung's original background is in Sale and Business Administration, and now he becomes a web developer.

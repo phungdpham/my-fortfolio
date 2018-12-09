@@ -13,11 +13,11 @@ const Portfolio = () => {
                 <h2 className='text-info'>Portfolio</h2>
             </div>
             <div className='mx-2 mt-3 mb-3'>
-                <h5>Work Projects</h5>
+                <h5 className='mb-3'>Work Projects</h5>
                 <Project />
             </div>
             <div className='mx-2 mb-3'>
-                <h5>Practices</h5>
+                <h5 className='mb-3'>Practices</h5>
                 <Practice />
             </div>
             
