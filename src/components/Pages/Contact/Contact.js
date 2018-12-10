@@ -3,11 +3,11 @@ import './contact.css';
 
 const Contact = () => {
     return(
-        <div className="container mt-3 p-3 bg-white text-dark">
+        <div className="container mt-3 p-3 bg-white text-dark" id='contact-e'>
             <div className='row mx-0' id='title-contact'>
                 <h2 className='mx-4 text-info'>Contact</h2>
             </div>
-            <div className="row   ml-5">
+            <div className="row">
                 <div className="col-md-12" id='contact-phung'>
                     
                     <div className='contact-info'>

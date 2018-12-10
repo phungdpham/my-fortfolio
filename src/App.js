@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import About from './components/Pages/About/About';
 import Portfolio from './components/Pages/Portfolio/Portfolio';
-import Contact from './components/Pages/Contact/Contact';
+// import Contact from './components/Pages/Contact/Contact';
 import Footer from './components/Pages/Footer/Footer';
 
 //importing fontAwesome library
@@ -17,9 +17,11 @@ const App = () => (
     <div>
       {/* <LandingPage /> */}
       <Navbar />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/" component={Portfolio} />
-      <Route path="/contact" component={Contact} />
+      <div className='main-content'>
+        <Route path="/about" component={About} />
+        <Route exact path="/" component={Portfolio} />
+        {/* <Route path="/contact" component={Contact} /> */}
+      </div>
       <Footer />
     </div>
   </Router>

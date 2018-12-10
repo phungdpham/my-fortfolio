@@ -12,6 +12,11 @@ body {
   background-size: 100% 100%;
 }
 
+.main-content {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

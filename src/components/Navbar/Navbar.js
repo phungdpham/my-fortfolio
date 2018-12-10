@@ -5,7 +5,7 @@ import Social from './SocialLinks';
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light ">
+        <nav className="navbar navbar-expand-lg navbar-light" id='sticky-navbar'>
             <div className="container">
                 <a className='navbar-brand' href='/'>
                     <h3 className='brand-name'>PHUNG PHAM</h3>

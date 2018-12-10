@@ -38,7 +38,7 @@ const SocialLink = () => {
 					</span>
 				</a>
 			</li>
-			<li  className="nav-item">
+			{/* <li  className="nav-item">
 				<a title='contact' href='/contact'>
 					<span className='icon'>
 						<FontAwesomeIcon icon='envelope' size='3x' color='#D4AC0D  ' />
@@ -47,7 +47,7 @@ const SocialLink = () => {
 						<b>Contact</b>
 					</span>
 				</a>
-			</li>
+			</li> */}
 			<li  className="nav-item">
 				<a href='/about'  title='About Me'>
 					<span className='icon'>

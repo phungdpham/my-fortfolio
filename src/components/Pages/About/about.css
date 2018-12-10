@@ -6,10 +6,10 @@
     border-bottom: 1px solid grey;
 }
 
-#learn-more {
+/* #learn-more {
     cursor: pointer;
     color: blue;
-}
+} */
 
 #view-portfolio {
     cursor: pointer;
@@ -19,4 +19,12 @@
 
 #extend-content {
     display: none;
+}
+
+.e-hide {
+    display: none;
+}
+
+.e-show {
+    display: block;
 }

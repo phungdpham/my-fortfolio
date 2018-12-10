@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
+import { Link, Route } from 'react-router-dom';
 import './about.css';
 import $ from 'jquery';
 import Contact from '../Contact/Contact';
+import Learn from './LearnMore';
 
+$(document).ready(function() {
+    $('#contact-me-btn').on('click', function() {
+        $(this).addClass('e-hide');
+    });
 
-class About extends Component {
-    render() {
-        $(document).ready(function () {
-            $('#extend-content').hide();
-            $('#learn-more').on('click', function () {
-                $('#extend-content').show();
-                $('#learn-more').text(' ');
-            });
-        })
+    $('#learn-more').on('click', function() {
+        // $(this).addClass('e-hide');
+        $('#contact-me-btn').removeClass('e-hide');
+    })
+})
+
+const About = props => {
         return (
             <div className="container mt-3" id='about'>
                 <div className="p-3 bg-light text-dark">
@@ -24,7 +28,7 @@ class About extends Component {
                             <div className="media mb-3rem">
                                 <div className="media-body">
                                     <div className='d-block mb-3'>
-                                        <h6>Phung is an experienced Front End Full Stack Developer</h6>
+                                        <h6>Phung is an experienced React Developer</h6>
                                         <p>
                                             He is able to build a sophisticated website with full database backend all the way from mockup to rollout,
                                             and adapt to work with diverse teams to implement projects. He experienced in building create websites for
@@ -57,39 +61,33 @@ class About extends Component {
                                                     </ul>
                                                 </div>
                                             </div>
-
-                                        </div>
-                                        <div className='d-block mb-3'>
-                                            <span>
-                                                <a id='view-portfolio' href='/'>View My Works</a>
-                                            </span>
-                                            <span className='ml-5'>
-                                                <a id='learn-more'>Learn More</a>
-                                            </span>
-
-                                        </div>
-                                        <div id='extend-content'>
-                                            <div className='d-block'>
-                                                <h6>He loves coding business application and creative websites</h6>
-                                                <p>
-                                                    Phung's original background is in Sale and Business Administration, and now he becomes a web developer.
-                                                    He fell in love with coding since he started learning to build business website for his customers.
-                                                    Having graduated from UCF bootcamp equips him with not only coding skill sets and fast learning ability of
-                                                    new technologies in web developments. He loves building business website and web application to support
-                                                    business owners.
-                                            </p>
+                                            <div className='row'>
+                                                <div className='col-md-12'>
+                                                    <div className='float-left' id='learn-more'>
+                                                        <Link to={`${props.match.url}/learn`} role='button' className='btn btn-link'>
+                                                            Learn More
+                                                </Link>
+                                                        <Link to='/about' role='button' className='btn btn-link'>Learn Less</Link>
+                                                        <Route exact path={`${props.match.url}/learn`} component={Learn} />
+                                                    </div>
+                                                    <div className='float-right' id='contact-me'>
+                                                        <Link to={`${props.match.url}/contact`} role='button' className='btn btn-warning' id='contact-me-btn'>
+                                                            Contact Me
+                                                </Link>
+                                                        {/* <Link to='/about' role='button' className='btn btn-link'>Learn Less</Link> */}
+                                                        <Route exact path={`${props.match.url}/contact`} component={Contact} />
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <Contact />
+                {/* <Contact /> */}
             </div>
         )
     }
-}
 export default About;

@@ -1,7 +1,17 @@
 .navbar {
     background-color: #F9E79F;
-    opacity: 0.9;
+    opacity: 1;
 }
+
+#sticky-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #F9E79F;
+    opacity: 1;
+    z-index: 100;
+}
+
 .brand-name {
     color: #21618C;
 }
@@ -10,10 +20,10 @@
     border-bottom: none;
 }
 
-.transparent {
+/* .transparent {
     background-color: white;
     opacity: 0.9;
-}
+} */
 
 .nav-link:hover {
     border: none;
@@ -23,12 +33,6 @@
 .nav-link:active {
     border: none;
     font-weight: bold;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
 
 #social-icon {
